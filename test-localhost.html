@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Localhost Request Test</title>
+</head>
+<body>
+  <h1>Testing XHR to localhost</h1>
+  <script>
+    fetch('http://localhost:8080')
+      .then(response => response.text())
+      .then(data => console.log('Success:', data))
+      .catch(error => console.error('Blocked or failed:', error));
+  </script>
+</body>
+</html>
+
